@@ -1,0 +1,289 @@
+# ==============================================================================
+# SECURITY - Credentials and Sensitive Data
+# ==============================================================================
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.env
+
+# AWS credentials and config
+.aws/
+aws-credentials.json
+credentials.json
+**/credentials/**
+
+# API keys and tokens
+*.key
+*.pem
+*.p12
+*.pfx
+**/secrets/**
+**/api_keys/**
+
+# Google Drive API credentials (if stored locally)
+**/Google Drive API Keys/**
+token.json
+client_secret*.json
+
+# ==============================================================================
+# PYTHON
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# uv specific
+.uv/
+uv.lock
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ==============================================================================
+# JUPYTER NOTEBOOK
+# ==============================================================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# Jupyter Notebook temporary files
+.virtual_documents/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# ==============================================================================
+# GEOSPATIAL DATA FILES (Large files that should be downloaded)
+# ==============================================================================
+# Downloaded tiles directory
+outputs/
+output/
+downloads/
+
+# GeoTIFF files (canopy height tiles - can be very large)
+*.tif
+*.tiff
+*.TIF
+*.TIFF
+
+# GeoTIFF auxiliary files
+*.tif.aux.xml
+*.tif.ovr
+*.tif.msk
+*.tfw
+
+# GeoPackage files (can be large)
+*.gpkg
+*.gpkg-shm
+*.gpkg-wal
+
+# Large GeoJSON files
+tiles.geojson
+*_tiles.geojson
+
+# Shapefile components
+*.shp
+*.shx
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.cpg
+*.qix
+
+# KML/KMZ files
+*.kml
+*.kmz
+
+# Listing files from S3 (very large text files)
+chm_contents.txt
+*_contents.txt
+s3_listing.txt
+
+# Raster processing temporary files
+*.xml
+*.ovr
+
+# ==============================================================================
+# QGIS
+# ==============================================================================
+# QGIS project backups
+*.qgz~
+*.qgs~
+
+# QGIS temporary files
+.qgis_temp/
+
+# Optionally ignore QGIS project files (uncomment if you don't want to version)
+# *.qgz
+# *.qgs
+
+# ==============================================================================
+# DATA AND ANALYSIS OUTPUTS
+# ==============================================================================
+# Excel files with data (if they're generated outputs)
+# Uncomment if these should not be versioned:
+# *.xlsx
+# *.xls
+# images.xlsx
+
+# CSV data files
+# *.csv
+# !example.csv
+
+# Analysis results
+results/
+figures/
+plots/
+
+# ==============================================================================
+# IDE / EDITOR
+# ==============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Cursor
+.cursor/
+
+# ==============================================================================
+# OPERATING SYSTEM
+# ==============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# LOGS AND DATABASES
+# ==============================================================================
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# ==============================================================================
+# TEMPORARY FILES
+# ==============================================================================
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+*~
+
+# ==============================================================================
+# COMPRESSION
+# ==============================================================================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ==============================================================================
+# PROJECT SPECIFIC - EXCEPTIONS
+# ==============================================================================
+# Keep README and documentation
+!README.md
+
+
+# Keep requirements/config files
+!pyproject.toml
+!requirements.txt
+!.python-version
+
+CLAUDE.md
+readme.txt
+.history/
+*copy*
