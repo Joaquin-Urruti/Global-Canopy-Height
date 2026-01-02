@@ -9,16 +9,5 @@ dependencies = [
     "geopandas>=0.14.0",
     "jupyter>=1.0.0",
     "notebook>=7.0.0",
-]
-
-[project.optional-dependencies]
-dev = [
     "ipykernel>=6.25.0",
 ]
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[tool.uv]
-dev-dependencies = []
